@@ -103,6 +103,12 @@
         </asp:DropDownList>
 <asp:Label ID="lbl_value" runat="server" Text=""></asp:Label>
 <asp:Button ID="Btn_Convert" runat="server" Text="Convert" OnClick="Convert"/>
+            <br />
+    <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
+    ControlToValidate="txt_amount" runat="server"
+    ErrorMessage="Only Numbers allowed"
+    ValidationExpression="\d+">
+</asp:RegularExpressionValidator>
 <br />
 <asp:Label ID="lblResult" runat="server" Text="1USA = 0.85 EUR"></asp:Label> <asp:Label ID="V" runat="server" Text=""></asp:Label>
 <br />
